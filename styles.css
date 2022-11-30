@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Blackout2am;
+    src: url(blackout2am.ttf);
+}
+@font-face {
+    font-family: BlackoutSunrise;
+    src: url(blackoutsunrise.ttf);
+}
+@font-face {
+    font-family: BlackoutMidnight;
+    src: url(blackoutmidnight.ttf);
+}
+#showname{
+    font-family: Blackout2am;
+    text-align: center;
+    font-size: 100px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: BlackoutSunrise;
+    font-size: 50px;
+}
+td{
+    width: 300px;
+}
+.name{
+    text-align: right;
+    padding-right: 20px;
+}
+.score{
+    font-family: blackoutmidnight;
+}
+
+#inline{
+    display: inline-block;
+}
+

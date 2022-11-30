@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACMi SCORING INPUT</title>
+    <script src="script.js"></script> 
+</head>
+<body>
+    <h1>Scoring Input</h1>
+    <form id="scoreform" class="form-anticlear">
+        <input type="text" id="showname" placeholder="SHOW NAME">
+        <table width="30%">
+            <tr>
+              <th width="30%">Team Name</th>
+              <th width="5%">Score</th>
+              <th width="5%">Team Color</th>
+            </tr>
+            <tr>
+              <td><input type="text" id="teamonename" size="30"></td>
+              <td><input type="number" id="teamonescore" title="0" name="1score" size="5"></td>
+              <td>
+                  <select name="1color" id="teamonecolor">
+                    <option value="none">none</option>
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                    <option value="pink">pink</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="teamtwoname" size="30"></td>
+                <td><input type="number" title="0" id="teamtwoscore" class="scoreinput" size="5"></td>
+                <td>
+                    <select name="2color" id="teamtwocolor">
+                      <option value="none">none</option>
+                      <option value="red">red</option>
+                      <option value="blue">blue</option>
+                      <option value="green">green</option>
+                      <option value="yellow">yellow</option>
+                      <option value="orange">orange</option>
+                      <option value="pink">pink</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="teamthreename" size="30"></td>
+                <td><input type="number" title="0" id="teamthreescore" class="scoreinput" size="5"></td>
+                <td>
+                    <select name="3color" id="teamthreecolor">
+                      <option value="none">none</option>
+                      <option value="red">red</option>
+                      <option value="blue">blue</option>
+                      <option value="green">green</option>
+                      <option value="yellow">yellow</option>
+                      <option value="orange">orange</option>
+                      <option value="pink">pink</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="teamfourname" size="30"></td>
+                <td><input type="number" title="0" id="teamfourscore" class="scoreinput" size="5"></td>
+                <td>
+                    <select name="4color" id="teamfourcolor">
+                      <option value="none">none</option>
+                      <option value="red">red</option>
+                      <option value="blue">blue</option>
+                      <option value="green">green</option>
+                      <option value="yellow">yellow</option>
+                      <option value="orange">orange</option>
+                      <option value="pink">pink</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="teamfivename" size="30"></td>
+                <td><input type="number" title="0" id="teamfivescore" class="scoreinput" size="5"></td>
+                <td>
+                    <select name="5color" id="teamfivecolor">
+                      <option value="none">none</option>
+                      <option value="red">red</option>
+                      <option value="blue">blue</option>
+                      <option value="green">green</option>
+                      <option value="yellow">yellow</option>
+                      <option value="orange">orange</option>
+                      <option value="pink">pink</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="teamsixname" size="30"></td>
+                <td><input type="number" title="0" id="teamsixscore" class="scoreinput" size="5"></td>
+                <td>
+                    <select name="6color" id="teamsixcolor">
+                      <option value="none">none</option>
+                      <option value="red">red</option>
+                      <option value="blue">blue</option>
+                      <option value="green">green</option>
+                      <option value="yellow">yellow</option>
+                      <option value="orange">orange</option>
+                      <option value="pink">pink</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="backgroundsettings">
+          <h3>Background Settings</h3>
+          <input type="color" class="colorselector">
+          <label>Background</label>
+          <input type="checkbox" id="nobkg">
+          <label>Enable BKG</label>
+        </div>
+        <div class="spacingsettings">
+          <h3>Spacing Settings</h3>
+          <label>One</label>
+          <input type="text" class="spacingsetting">
+          <label>Two</label>
+          <input type="text" class="spacingsetting">
+          <label>Three</label>
+          <input type="text" class="spacingsetting">
+          <label>Four</label>
+          <input type="text" class="spacingsetting">
+          <label>Five</label>
+          <input type="text" class="spacingsetting">
+        </div>
+        <input type="button" value="Submit" id="btnsubmit" onclick="submitForm()" onclick="pushUpdates();">
+    </form>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/gh/akjpro/form-anticlear/base.js"></script>
