@@ -4,132 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACMi SCORING INPUT</title>
-    <script src="script.js"></script> 
+    <title>Input - Scoreboard</title>
+    <link rel="stylesheet" href="stylesmain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Scoring Input</h1>
+  <header>
+    <h1>dsis</h1>
+  </header>
     <form id="scoreform" class="form-anticlear">
-        <input type="text" id="showname" placeholder="SHOW NAME">
-        <table width="30%">
-            <tr>
-              <th width="30%">Team Name</th>
-              <th width="5%">Score</th>
-              <th width="5%">Team Color</th>
-            </tr>
-            <tr>
-              <td><input type="text" id="teamonename" size="30"></td>
-              <td><input type="number" id="teamonescore" title="0" name="1score" size="5"></td>
-              <td>
-                  <select name="1color" id="teamonecolor">
-                    <option value="none">none</option>
-                    <option value="red">red</option>
-                    <option value="blue">blue</option>
-                    <option value="green">green</option>
-                    <option value="yellow">yellow</option>
-                    <option value="orange">orange</option>
-                    <option value="pink">pink</option>
-                  </select>
-              </td>
-            </tr>
-            <tr>
-                <td><input type="text" id="teamtwoname" size="30"></td>
-                <td><input type="number" title="0" id="teamtwoscore" class="scoreinput" size="5"></td>
-                <td>
-                    <select name="2color" id="teamtwocolor">
-                      <option value="none">none</option>
-                      <option value="red">red</option>
-                      <option value="blue">blue</option>
-                      <option value="green">green</option>
-                      <option value="yellow">yellow</option>
-                      <option value="orange">orange</option>
-                      <option value="pink">pink</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="text" id="teamthreename" size="30"></td>
-                <td><input type="number" title="0" id="teamthreescore" class="scoreinput" size="5"></td>
-                <td>
-                    <select name="3color" id="teamthreecolor">
-                      <option value="none">none</option>
-                      <option value="red">red</option>
-                      <option value="blue">blue</option>
-                      <option value="green">green</option>
-                      <option value="yellow">yellow</option>
-                      <option value="orange">orange</option>
-                      <option value="pink">pink</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="text" id="teamfourname" size="30"></td>
-                <td><input type="number" title="0" id="teamfourscore" class="scoreinput" size="5"></td>
-                <td>
-                    <select name="4color" id="teamfourcolor">
-                      <option value="none">none</option>
-                      <option value="red">red</option>
-                      <option value="blue">blue</option>
-                      <option value="green">green</option>
-                      <option value="yellow">yellow</option>
-                      <option value="orange">orange</option>
-                      <option value="pink">pink</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="text" id="teamfivename" size="30"></td>
-                <td><input type="number" title="0" id="teamfivescore" class="scoreinput" size="5"></td>
-                <td>
-                    <select name="5color" id="teamfivecolor">
-                      <option value="none">none</option>
-                      <option value="red">red</option>
-                      <option value="blue">blue</option>
-                      <option value="green">green</option>
-                      <option value="yellow">yellow</option>
-                      <option value="orange">orange</option>
-                      <option value="pink">pink</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="text" id="teamsixname" size="30"></td>
-                <td><input type="number" title="0" id="teamsixscore" class="scoreinput" size="5"></td>
-                <td>
-                    <select name="6color" id="teamsixcolor">
-                      <option value="none">none</option>
-                      <option value="red">red</option>
-                      <option value="blue">blue</option>
-                      <option value="green">green</option>
-                      <option value="yellow">yellow</option>
-                      <option value="orange">orange</option>
-                      <option value="pink">pink</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-        <div class="backgroundsettings">
-          <h3>Background Settings</h3>
-          <input type="color" class="colorselector">
-          <label>Background</label>
-          <input type="checkbox" id="nobkg">
-          <label>Enable BKG</label>
-        </div>
-        <div class="spacingsettings">
-          <h3>Spacing Settings</h3>
-          <label>One</label>
-          <input type="text" class="spacingsetting">
-          <label>Two</label>
-          <input type="text" class="spacingsetting">
-          <label>Three</label>
-          <input type="text" class="spacingsetting">
-          <label>Four</label>
-          <input type="text" class="spacingsetting">
-          <label>Five</label>
-          <input type="text" class="spacingsetting">
+        <input type="text" id="showname" placeholder="Show Name">
+        <div class="godiv">
+          <fieldset>
+            <legend>Scoreboard Controls</legend>
+            <div class="wrapdiv">
+              <label class="toplabel">Team Names</label>
+              <input type="text" id="teamonename" placeholder="Team 1">
+              <input type="text" id="teamtwoname" placeholder="Team 2">
+              <input type="text" id="teamthreename" placeholder="Team 3">
+              <input type="text" id="teamfourname" placeholder="Team 4">
+              <input type="text" id="teamfivename" placeholder="Team 5">
+              <input type="text" id="teamsixname" placeholder="Team 6">
+            </div>
+            <div class="wrapdiv scorediv">
+              <label class="toplabel">Scores</label>
+              <input type="number" id="teamonescore" title="0" name="1score" size="10">
+              <input type="number" id="teamtwoscore" title="0" name="2score" size="10">
+              <input type="number" id="teamthreescore" title="0" name="3score" size="10">
+              <input type="number" id="teamfourscore" title="0" name="4score" size="10">
+              <input type="number" id="teamfivescore" title="0" name="5score" size="10">
+              <input type="number" id="teamsixscore" title="0" name="6score" size="10">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Style Controls</legend>
+            <div class="backgroundsettings">
+              <div class="bkgset">
+                <h5>Background</h5>
+                <input type="color" id="colsel">
+                <input type="checkbox" id="nobkg">
+                <label>Enable</label>
+              </div>
+              <div class="bkgset">
+                <h5>Text</h5>
+                <input type="color" id="colsel2">
+                <input type="checkbox" id="notxt">
+                <label>Enable</label>
+              </div>
+              <div class="settings">
+                <h5>Other Text</h5>
+                <div class="innersettings">
+                  <!-- <label for="fontsize" class="dynamiclabel">Font size<small>px</small></label> -->
+                  <!-- <input type="number" id="fontsize" class="smallnum"> -->
+                  <!-- <div class="sliderthing">
+                    <input type="range" min="20" max="100" value="50" class="slider" id="fontsize">
+                  </div> -->
+                  <!-- <label for="titlesize" class="dynamiclabel">Title size<small>px</small></label>
+                  <div class="sliderthing">
+                    <input type="range" min="70" max="150" value="100" class="slider" id="titlesize">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </div>
         <input type="button" value="Submit" id="btnsubmit" onclick="submitForm()" onclick="pushUpdates();">
+        <input type="button" value="Clear" id="btnclear" width="">
+        <small id="updated">Updated.</small>
+        <a onclick="enableAdvanced()"><small>ADVANCED SETTINGS</small></a>
+        <div id="advancedoptions">
+          <input type="checkbox" id="autoupdater" onchange="autoUpdate()">
+          <label>Enable Auto-Updates <small>WARNING: NOT RECCOMENDED</small></label>
+        </div>
+        <details>
+          <summary>Tool Information</summary>
+          <p>Welcome to <span>dsis</span>.<br>DSIS, the Dual Scoreboard Interface System, is a tool developed to create a live-updating scoreboard solution for seamless display.
+          <br>This web application is designed for dual-screen use. This page <code>dsis.mazenabu.com</code> manages all settings and text displayed on the scoreboard <code>dsis.mazenabu.com/sb</code>, so no back-and-forth page switching is needed.
+          <br>
+          <br>
+          ① Enter the details of your initial scoreboard.<br>
+          ② Click 'Submit'.<br>
+          ③ Move the automatically-opened scoreboard page to your displayed second screen.<br>
+          ④ Continue to edit the scoreboard from the Control Panel and click 'Submit' to push your updates to the displayed page.</p>
+          <small>© Copyright 2022. All Rights Reserved.<br>Created by Mazen Abukhalaf</small>
+        </details>
     </form>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/gh/akjpro/form-anticlear/base.js"></script>

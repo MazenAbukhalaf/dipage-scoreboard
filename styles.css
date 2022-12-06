@@ -19,7 +19,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     font-family: BlackoutSunrise;
-    font-size: 50px;
+    font-size: 80px;
 }
 td{
     width: 300px;
@@ -36,3 +36,7 @@ td{
     display: inline-block;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
