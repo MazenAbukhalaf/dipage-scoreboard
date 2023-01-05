@@ -50,3 +50,7 @@ function enableAdvanced() {
         x.style.display = "none";
     }
 }
+
+function clearContents() {
+    window.location.reload(true);
+}
