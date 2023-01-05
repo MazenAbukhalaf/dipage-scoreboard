@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/adminmaz/dsis.mazenabu.com/
+    - /bin/cp -R * $DEPLOYPATH
